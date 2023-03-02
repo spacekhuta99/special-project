@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+  
+         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+         <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+       const divDOM = document.createElement('div');
+       const h2DOM = document.createElement('h2');
+       const pDOM = document.createElement('p');
+       divDOM.classList = 'post-item';
+       h2DOM.innerText = 'Hoc ReactJS tai f8';
+       h2DOM.style= 'color:red';
+       h2DOM.title = 'Hoc React tai f8';
+       pDOM.innerText = 'Hoc ReactJS tu co ban den nang cao';
+       document.body.appendChild(divDOM);
+       divDOM.appendChild(h2DOM);
+       divDOM.appendChild(pDOM);
+
+
+       const divReact = React.createElement('div',
+       {
+        className: 'post-item',
+       },
+       React.createElement('h2',{title: 'Hoc React tai f8'},'Hoc ReactJS tai f8'),
+       React.createElement('p',null,'Hoc ReactJS tu co ban den nang cao'),
+       )
+       console.log(divReact);
+    </script>
+    <script type="module" src="./main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
